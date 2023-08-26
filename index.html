@@ -208,13 +208,13 @@
  </div> 
 
  <script>
-    const images = document.querySelectorAll('.images')
+    const images = document.querySelectorAll('.images');
     const toggleBtn = document.querySelector('.toggle-btn')
     const dropDownMenu = document.querySelector('.dropdown-menu')
     const toggleBtnIcon = document.querySelector('.toggle-btn i')
 
 
-    window.addEventListener(' check',scroll);
+    window.addEventListener('scroll', checkBoxes);
 
     checkBoxes();
 
@@ -224,12 +224,12 @@
         images.forEach((image)  => {
             const imageTop = image.getBoundingClientRect().top;
 
-           if (imageTop < triggerBottom){
+           if (imageTop < triggerBottom) {
                 image.classList.add('show');
             } else {
                 image.classList.remove('show');
             }
-        })
+        });
        }
 
 
