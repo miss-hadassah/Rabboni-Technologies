@@ -396,7 +396,7 @@ nav{
 
 h2{
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     padding-bottom: 10px;
 }
 
@@ -406,7 +406,7 @@ ol{
 }
 li{
     color: rgb(45, 39, 52);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     
 }
@@ -428,15 +428,15 @@ li{
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    padding-top: 60px;
+    padding-top: 20px;
 
        
 
 }
 
 h3{
-    line-height: 50px;
-    padding-top: 50px;
+    line-height: 30px;
+    padding-top: 20px;
     font-size: 20px;
     
 }
@@ -452,7 +452,6 @@ h5{
     align-items:center ;
     justify-content:space-around;
     margin-bottom: 17px;
-    gap: 20px;
     flex: 1;
 
 }
@@ -469,6 +468,7 @@ h5{
 
 .copyright{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
     color: rgb(45, 39, 52);
@@ -792,7 +792,7 @@ nav{
     }
 
     .right{
-        padding-left: 80px;
+        padding-left: 90px;
 
     }
 
@@ -896,7 +896,7 @@ nav{
 
      .web-app{
         width:300px ;
-        padding-right: 90px;
+        padding-right: 50px;
      }
 
      .contact-us{
@@ -906,12 +906,7 @@ nav{
         
      }
 
-
-
-    .email{
-        margin-bottom:px;
-
-     }
+    
     .call-us{
         padding-right: 95px;
      }
@@ -973,6 +968,7 @@ nav{
 
     .web-app{
         width: 220px;
+        padding-left: 30px;
     }
 
 
