@@ -14,12 +14,10 @@ body{
     height: 100vh;
 }
 
-header{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-}
 
 nav{
     background-color:rgb(45, 39, 52);
+    overflow: hidden;
     height: fit-content;
     opacity: 75%;
     display: flex;
@@ -27,6 +25,7 @@ nav{
     position: relative;
     margin-bottom :5px;
     justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 
@@ -37,6 +36,10 @@ nav{
     line-height: normal;
    
 
+}
+.first-h2{
+    text-align: center;
+    font-size: 22px;
 }
 
 .first-p{
@@ -77,14 +80,18 @@ nav{
 .section-color{
     background-color: rgb(176, 170,184);
     border-bottom-right-radius: 50px;
+    overflow: hidden;
     
 }
 
 .landing-page{
     display: flex;
-    gap: 150px;
-    padding-bottom: 200px;
-    padding-top: 80px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 100px;
+    padding-top: 100px;
     border-bottom-right-radius: 90px;
     -webkit-animation-duration: 5s;
     animation-duration: 5s;
@@ -119,13 +126,11 @@ nav{
     display: flex;
     flex: 1;
     flex-direction: column;
-    gap: 60px;
-    margin-left: 80px;
-    top: 100px;
+    gap: 50px;
+    padding-left: 50px;
     letter-spacing: 0.24px;
     line-height: 30px;
     font-weight: bold;
-    width: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
@@ -140,12 +145,19 @@ nav{
 .right{
     display: flex;
     flex: 1;
+    padding-top: 30px;
+
     
 }
 
 .first-image{
     width:500px;
-    border-radius: 17px;
+    padding-left: 40px;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 18%;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 18%;
+    
 
 }
 
@@ -153,6 +165,7 @@ nav{
 .services-colour{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: rgb(176, 170, 184);
+    overflow: hidden;
 }
 
 .services{
@@ -342,27 +355,31 @@ nav{
     margin-left: 50px;
 }
 
+
+/**industry-section**/
+
 .industry40-colour{
     background-color: rgb(176, 170, 184);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    overflow: hidden;
     
 }
-.industry{
+
+
+.industry40{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 100px;
     color: rgb(45, 39, 52);
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 
-.industry40 {
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    font-weight: bold;
+.seventh-h1{
+    padding-bottom: 40px;
+    
 }
+
 
 .section-div{
     display: flex;
@@ -379,13 +396,19 @@ nav{
 
 h2{
     color: white;
+    font-size: 18px;
+    padding-bottom: 10px;
 }
 
 ol{
     margin-left:40px;
+    
 }
 li{
     color: rgb(45, 39, 52);
+    font-size: 16px;
+    font-weight: bold;
+    
 }
 
 .contact-colour{
@@ -393,6 +416,8 @@ li{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(45, 39, 52);
     opacity: 90%;
+    padding-bottom: 50px;
+    overflow: hidden;
     
     
 }
@@ -401,59 +426,58 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-weight: bold;
-    gap: 10px;
-    padding-top: 20px;
-    opacity: 90%;
-    
+    padding-top: 60px;
+
+       
 
 }
 
 h3{
     line-height: 50px;
+    padding-top: 50px;
+    font-size: 20px;
+    
+}
+
+h5{
+    font-size: 14px;
+    
 }
 
 .contact-us{
     display: flex;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items:center ;
+    justify-content:space-around;
     margin-bottom: 17px;
-    gap: 30px;
-
-
-
-}
-
-.email{
-    display: flex;
-    flex-direction: column;
+    gap: 20px;
     flex: 1;
+
 }
 
-.call-us{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+
+.sixth-h1{
+    text-align: center;
 }
 
-.address{
-    font-size: larger;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.eight-h1{
+    font-size: 30px;
 }
+
 
 .copyright{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-bottom: 30px;
+    text-align: center;
     color: rgb(45, 39, 52);
+
     
 }
 
 h4{
-    font-size:13px;
+    font-size:11px;
 }
 
 .toggle-btn{
@@ -508,6 +532,12 @@ nav{
 
 /*RESPONSIVE*/
 
+@media screen and (max-width: 1024px){
+    .right{
+        padding-right: 35px;
+    }
+}
+
 @media screen and (max-width: 900px){
      .second-div{
         display: none;
@@ -525,7 +555,6 @@ nav{
     .landing-page{
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 60px;
         padding-bottom: 100px;
         padding-top:50px ;
@@ -536,11 +565,9 @@ nav{
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 400px;
         gap: 40px;
-        line-height: 20px;
-        letter-spacing: 0.14px;
-        margin-left: 50px;
+        line-height: 2;
+        letter-spacing: 0.2px;
         top: 100px;
         font-weight: lighter;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
@@ -548,11 +575,6 @@ nav{
 
     }
 
-    .right{
-        display: flex;
-        margin-left: 100px;
-        
-    }
 
     .services{
         gap: 40px;
@@ -668,46 +690,31 @@ nav{
    }
 
    .seventh-h1{
-    font-size: 18px;
+    font-size: 25px;
     margin-top: 40px;
 
   }
 
-  .section-div{
-    margin-bottom: 50px;
-  }
   .applications{
     font-size: 10px;
   }
 
   .components{
     font-size: 10px;
+
+    
   }
 
   .smart-system{
     font-size: 10px;
+    padding-left: 10px;
   }
 
-  .web-app{
-    font-size: 10px;
+  .web-app{  
+    padding-left: 70px;
   }
 
-  .building-online{
-    font-size: 10px;
-  }
 
- .eight-h1{
-    font-size: 18px;
- }
-
-
- .contact-us{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-     
- }
  .email{
     font-size: 12px;
  }
@@ -720,6 +727,14 @@ nav{
     font-size: 12px;   
    
  }
+
+ section-div{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
  .copyright{
     font-size: 12px;
@@ -774,6 +789,11 @@ nav{
         letter-spacing: 0.01px;
         width: 300px;
         
+    }
+
+    .right{
+        padding-left: 80px;
+
     }
 
     .first-h2{
@@ -872,36 +892,97 @@ nav{
     .sixth-h1{
         font-size: 15px;
      }
+     
 
      .web-app{
-        width:280px ;
+        width:300px ;
+        padding-right: 90px;
      }
 
-     .building-online{
-        width: 280px;
+     .contact-us{
+        display: flex;
+        flex-direction: column;
+
+        
      }
 
-     .email{
-        margin-bottom:38px;
-        padding-left: 10px;
+
+
+    .email{
+        margin-bottom:px;
+
      }
-     .call-us{
-        margin-bottom: 30px;
+    .call-us{
+        padding-right: 95px;
      }
 
      .address{
-        padding-right: 10px;
-        margin-top: 15px;
+        padding-right: 9px;
+        width: 200px;
      }
+
+    
 
      .copyright{
         color: rgb(45, 39, 52);
-        font-size: 0px;
+        font-size: 13px;
      }
+ }
+
+ @media screen and (max-width:300px){
+
+    .left{
+        padding-right: 30px;
+    }
+
+    .second-p{
+        width: 200px;
+    }
+
+    .third-p{
+        width: 200px;
+    }
+
+    .first-image{
+        width: 250px;
+        padding-left: 17px;
+    }
+    .fourth-p{
+        width: 200px;
+    }
+    .install,
+    .consultancy,
+    .training,
+    .repairs{
+        width: 180px;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4{
+        width: 210px;
+    }
+
+    .applications,
+    .components,
+    .smart-system
+    {
+        width:250px;
+    }
+
+    .web-app{
+        width: 220px;
+    }
 
 
-
-
-
+    .contact-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
  }
+ 
+ 
