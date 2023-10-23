@@ -27,19 +27,20 @@
         </ul>
         </div>
 
-        
-        
-       <div class ="toggle-btn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
 
         <div class="dropdown-menu">
             <li class="second-li">
-                  <a class="dropclass" href="#">Home</a>               
+                  <a class="dropclass" href="#">Home</a>              
                   <a class = "dropclass" href="#services">Services</a>               
                   <a class = "dropclass" href="#industry40">Industry 4.0</a>
                   <a class ="dropclass" href="#contact">Contact Us</a>
             </li>
+        </div>
+
+        <div class ="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
     </nav>
 
@@ -104,8 +105,8 @@
  </div>
 </div>
 
-   <div id="industry40" class="industry40-colour">
-      <div class="industry40">
+   <div class="industry40-colour">
+      <div id="industry40" class="industry40">
         <div class="seventh-h1">INDUSTRY 4.0</div>
       <div class="section-div">
            <div class="applications">
@@ -140,7 +141,7 @@
                 <li> Smart schools, colleges and campuses.</li>            
                 <li> Smart Agriculture.</li>
                 <li> Smart Hospitls.</li>          
-                <li> Smart Securityc.</li>            
+                <li> Smart Security.</li>            
             </ol>
            </div>
 
@@ -166,7 +167,7 @@
             </ol>
           </div>
         </div>
-    </div>
+    </div>   
     
 </div>
 
@@ -209,9 +210,9 @@
 
  <script>
     const images = document.querySelectorAll('.images');
-    const toggleBtn = document.querySelector('.toggle-btn')
+    const hamburger = document.querySelector('.hamburger')
     const dropDownMenu = document.querySelector('.dropdown-menu')
-    const toggleBtnIcon = document.querySelector('.toggle-btn i')
+    
 
 
     window.addEventListener('scroll', checkBoxes);
@@ -233,14 +234,16 @@
        }
 
 
-        toggleBtn.onclick = function (){
-        dropDownMenu.classList.toggle('open')
-        const isOpen = dropDownMenu.classList.contains('open')
+        hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        dropDownMenu.classList.toggle("active");
 
-        toggleBtnIcon.classList = isOpen
-        ? 'fa-solid fa-xmark'
-        : 'fa-solid fa-bars'      
-       }
+       })
+       
+       document.querySelectorAll(".dropclass").forEach(n => n.addEventListener("click", () => {
+             hamburger.classList.remove("active");
+             dropDownMenu.classList.remove("active");
+       }))
      </script>
    </body>
  </html>

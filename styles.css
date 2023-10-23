@@ -39,7 +39,9 @@ nav{
 }
 .first-h2{
     text-align: center;
-    font-size: 22px;
+    font-size: 27px;
+    padding-right: 30px;
+    
 }
 
 .first-p{
@@ -129,7 +131,7 @@ nav{
     gap: 50px;
     padding-left: 50px;
     letter-spacing: 0.24px;
-    line-height: 30px;
+    line-height: 26px;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -154,9 +156,9 @@ nav{
     width:500px;
     padding-left: 40px;
     border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 18%;
+    border-bottom-left-radius: 17%;
     border-top-right-radius: 10%;
-    border-top-left-radius: 18%;
+    border-top-left-radius: 17%;
     
 
 }
@@ -385,7 +387,6 @@ nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 60px;
     align-items: flex-start;
     padding-left: 10px;
     padding-right: 10px;
@@ -397,7 +398,8 @@ nav{
 h2{
     color: white;
     font-size: 16px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 20px;
 }
 
 ol{
@@ -480,32 +482,44 @@ h4{
     font-size:11px;
 }
 
-.toggle-btn{
+.hamburger{
     display: none;
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+    margin-right: 10px;
 
+}
+
+.bar{
+    display: block;
+    width: 24px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: white;
 }
 
 .dropdown-menu{
-    display:none ;
-    position: absolute;
-    right: 0rem;
-    top: 120px;
-    height: 0;
-    width:300px;
+    display:none;
+    position:fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    width:100%;
     background-color:gray;
-    border-bottom-color:20px;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    transition: 0.3s;
     overflow: hidden;
+    flex-direction: column;
 
 }
 
-
-.dropdown-menu.open{
-    height: 380px;
+.dropdown-menu.active{
+    left: 0;
 }
+
 
 .second-li{
     display: flex;
@@ -514,6 +528,7 @@ h4{
     align-items: center;
     justify-content: center;
     gap: 50px;
+    margin: 16px 0;
 
 }
 
@@ -523,6 +538,7 @@ h4{
     letter-spacing: 0.24px;
     font-weight: bolder;
     line-height: 30px;
+    
 
 }
 
@@ -538,23 +554,39 @@ nav{
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 912px){
      .second-div{
         display: none;
     }
 
-    .toggle-btn{
+    .hamburger{
         display: block;
 
      }
+
+     .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+     }
+
+     .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+     }
+
+     .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+     }
+
+
 
     .dropdown-menu {
         display: block;
      }
 
+
     .landing-page{
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 60px;
         padding-bottom: 100px;
         padding-top:50px ;
@@ -766,7 +798,7 @@ nav{
 
     .dropdown-menu{
         top: 80px;
-        width: 200px;
+        width: 100%;
     }
 
     .dropdown-menu.open{
@@ -788,6 +820,7 @@ nav{
         line-height: 20px;
         letter-spacing: 0.01px;
         width: 300px;
+        padding-left: 20px;
         
     }
 
@@ -892,6 +925,14 @@ nav{
     .sixth-h1{
         font-size: 15px;
      }
+
+     li{
+        font-size: 12px;
+     }
+
+     h5{
+        font-size: 12px;
+     }
      
 
      .web-app{
@@ -908,12 +949,12 @@ nav{
 
     
     .call-us{
-        padding-right: 95px;
+        padding-right: 79px;
      }
 
      .address{
-        padding-right: 9px;
-        width: 200px;
+        padding-right: px;
+        width: 170px;
      }
 
     
@@ -930,12 +971,16 @@ nav{
         padding-right: 30px;
     }
 
+    .right{
+        padding-left: 115px;
+    }
+
     .second-p{
-        width: 200px;
+        width: 230px;
     }
 
     .third-p{
-        width: 200px;
+        width: 230px;
     }
 
     .first-image{
