@@ -335,26 +335,27 @@ nav{
 .fifth-p{
     line-height:30px;
     letter-spacing: 0.24px;
-    margin-left:50px;
+    margin-left:30px;
 }
 
 .sixth-p{
     line-height: 30px;
     letter-spacing: 0.24px;
-    margin-left: 50px;
+    margin-left: 5px;
+    width: 280px;
 }
 
 .seventh-p{
     line-height: 30px;
     letter-spacing: 0.24px;
-    margin-left: 50px;
+    margin-left: 28px;
 
 }
 
 .eight-p{
     line-height: 30px;
     letter-spacing: 0.24px;
-    margin-left: 50px;
+    margin-left: 28px;
 }
 
 
@@ -505,7 +506,7 @@ h4{
     display:none;
     position:fixed;
     left: -100%;
-    top: 70px;
+    top: 93px;
     gap: 0;
     width:100%;
     background-color:gray;
@@ -909,15 +910,26 @@ nav{
 
     .sixth-p,
     .fifth-p,
-    .eight-p,
     .seventh-p{
         font-size: 10px;
         line-height: 15px;
         letter-spacing: 0.3px;
         margin-left: 30px;
         color: rgb(45, 39, 52);
+        width: 210px;
+        padding-right: 24px;
 
     }
+
+.eight-p{
+    max-width: 210px;
+    letter-spacing: 0.3px;
+    line-height: 15px;
+    color: rgb(45, 39, 52);
+    font-size: 10px;
+    padding-right: 18px;
+}
+
 
     .third-h1,
     .fourth-h1,
@@ -949,11 +961,11 @@ nav{
 
     
     .call-us{
-        padding-right: 82px;
+        padding-right: 84px;
      }
 
      .address{
-        padding-right: 4px;
+        padding-right: 6px;
         width: 170px;
      }
 
@@ -989,6 +1001,14 @@ nav{
     }
     .fourth-p{
         width: 200px;
+    }
+
+    .fifth-p,
+    .sixth-p,
+    .seventh-p,
+    .eight-p{
+        width: 160px;
+        padding-right: 20px;
     }
     .install,
     .consultancy,
